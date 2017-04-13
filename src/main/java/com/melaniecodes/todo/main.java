@@ -20,7 +20,9 @@ public class main
 
         post("/signin", (req, res) -> {
             Map<String, String> model = new HashMap<>();
-            model.put("username", req.queryParams("username"));
+            String username = req.queryParams("username");
+            model.put("username", username);
+            res.cookie("username", username);
             return new ModelAndView(model, "signin.hbs");
         }, new HandlebarsTemplateEngine());
     }
