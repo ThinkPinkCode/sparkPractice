@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50d63ed3-e10c-48a1-adfe-a5dd5439f32a" name="Default" comment="testing˚˚">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/base.hbs" />
+    <list default="true" id="50d63ed3-e10c-48a1-adfe-a5dd5439f32a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/melaniecodes/todo/main.class" afterPath="$PROJECT_DIR$/build/classes/main/com/melaniecodes/todo/main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/main.java" afterPath="$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/model/SimpleCourseIdeaDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/model/SimpleCourseIdeaDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/signin.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/signin.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -1087,7 +1084,7 @@
       <workItem from="1492010232868" duration="20000" />
       <workItem from="1492010265629" duration="6056000" />
       <workItem from="1492511819404" duration="2373000" />
-      <workItem from="1492541723400" duration="2016000" />
+      <workItem from="1492541723400" duration="2293000" />
     </task>
     <task id="LOCAL-00001" summary="added signin page">
       <created>1491943301358</created>
@@ -1124,14 +1121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1492539660429</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added base template">
+      <created>1492545495188</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1492545495188</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18582000" />
+    <option name="totallyTimeSpent" value="18859000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1436" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1436" height="877" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1180,7 +1184,8 @@
     <MESSAGE value="added cookie" />
     <MESSAGE value="fixed error on SimpleDAO" />
     <MESSAGE value="testing˚˚" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing˚˚" />
+    <MESSAGE value="added base template" />
+    <option name="LAST_COMMIT_MESSAGE" value="added base template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
