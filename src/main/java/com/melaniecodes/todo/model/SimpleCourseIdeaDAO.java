@@ -1,5 +1,4 @@
 package com.melaniecodes.todo.model;
-//testing testing
 
 import java.util.ArrayList;
 import java.util.List;

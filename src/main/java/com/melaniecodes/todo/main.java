@@ -1,5 +1,7 @@
 package com.melaniecodes.todo;
 
+import com.melaniecodes.todo.model.CourseIdeaDAO;
+import com.melaniecodes.todo.model.SimpleCourseIdeaDAO;
 import spark.ModelAndView;
 import spark.Request;
 import spark.template.handlebars.HandlebarsTemplateEngine;
@@ -12,6 +14,7 @@ import static spark.Spark.post;
 
 public class main
 {
+    CourseIdeaDAO dao = new SimpleCourseIdeaDAO();
 
     public static void main(String[] args) {
 
