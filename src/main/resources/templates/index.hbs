@@ -9,9 +9,14 @@
 </head>
 <body>
 <h1>Here's the app</h1>
-<form action="/signin" method="post">
-    <input type="text" placeholder="Username" name="username" />
-    <button>Sign In</button>
-</form>
+<h1> {{#if username}}
+    Welcome, {{username}}!
+{{else}}
+    <form action="/signin" method="post">
+        <input type="text" placeholder="Username" name="username" />
+        <button>Sign In</button>
+    </form>
+{{/if}}</h1>
+
 </body>
 </html>

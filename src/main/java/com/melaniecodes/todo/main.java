@@ -15,7 +15,12 @@ public class main
 
     public static void main(String[] args) {
 
-        get("/", (req, res) -> new ModelAndView(null, "index.hbs"), new HandlebarsTemplateEngine());
+        get("/", (req, res) -> {
+            Map<String, String> model = new HashMap<>();
+            String username = req.cookie("username");
+            model.put("username", username);
+            return new ModelAndView(model, "index.hbs");
+        }, new HandlebarsTemplateEngine());
 
 
         post("/signin", (req, res) -> {
