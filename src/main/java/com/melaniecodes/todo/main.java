@@ -34,8 +34,9 @@ public class main
             String username = req.queryParams("username");
             model.put("username", username);
             res.cookie("username", username);
-            return new ModelAndView(model, "signin.hbs");
-        }, new HandlebarsTemplateEngine());
+            res.redirect("/");
+            return null;
+        });
 
         get ("/ideas", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
