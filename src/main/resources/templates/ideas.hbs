@@ -1,5 +1,16 @@
 {{#partial "content"}}
 <h1>List of Ideas</h1>
+<ul>
+    {{#each ideas}}
+        <li>{{courseTitle}}</li>
+    {{/each}}
+</ul>
+
+<form action="/ideas" method="post">
+    <input type="text" placeholder="Course Name" name="courseName">
+    <button>Add Idea</button>
+</form>
+
 {{/partial}}
 
 {{> base.hbs}}

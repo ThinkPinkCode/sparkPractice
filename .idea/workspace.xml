@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d63ed3-e10c-48a1-adfe-a5dd5439f32a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/ideas.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/melaniecodes/todo/main.class" afterPath="$PROJECT_DIR$/build/classes/main/com/melaniecodes/todo/main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/main.java" afterPath="$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/base.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/base.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/ideas.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/ideas.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,21 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,18 +64,28 @@
       <file leaf-file-name="ideas.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ideas.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="90">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base.hbs">
+      <file leaf-file-name="CourseIdea.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/model/CourseIdea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="135">
+              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/signin.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -458,9 +456,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/base.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/public.css/main.css" />
         <option value="$PROJECT_DIR$/src/main/resources/public/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/ideas.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.hbs" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/addIdea.hbs" />
         <option value="$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/main.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ideas.hbs" />
       </list>
     </option>
   </component>
@@ -493,8 +492,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -519,6 +516,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -631,6 +632,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1122,7 +1125,8 @@
       <workItem from="1492010232868" duration="20000" />
       <workItem from="1492010265629" duration="6056000" />
       <workItem from="1492511819404" duration="2373000" />
-      <workItem from="1492541723400" duration="5240000" />
+      <workItem from="1492541723400" duration="9081000" />
+      <workItem from="1492801809036" duration="1176000" />
     </task>
     <task id="LOCAL-00001" summary="added signin page">
       <created>1491943301358</created>
@@ -1173,14 +1177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1492557423082</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added ideas page">
+      <created>1492700416028</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1492700416028</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21806000" />
+    <option name="totallyTimeSpent" value="26823000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1436" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1436" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1192,13 +1203,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28772378" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2544757" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25557104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2270195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3024948" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1232,7 +1243,8 @@
     <MESSAGE value="testing˚˚" />
     <MESSAGE value="added base template" />
     <MESSAGE value="implemented hb template" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented hb template" />
+    <MESSAGE value="added ideas page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ideas page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1243,11 +1255,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ideas.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,7 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,7 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1356,7 +1391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1440,10 +1474,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public.css/main.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/model/SimpleCourseIdeaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1456,26 +1498,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public.css/main.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addIdea.hbs" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        <state relative-caret-position="45">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/model/CourseIdea.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="105">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1488,34 +1523,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/model/CourseIdea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ideas.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melaniecodes/todo/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

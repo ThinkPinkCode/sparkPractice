@@ -1,14 +1,17 @@
 
 {{#partial "content"}}
-<h1>Here's the app</h1>
-<h1> {{#if username}}
-    Welcome, {{username}}!
-{{else}}
-    <form action="/signin" method="post">
-        <input type="text" placeholder="Username" name="username" />
-        <button>Sign In</button>
-    </form>
-{{/if}}</h1>
+    <h1>Here's the app</h1>
+
+
+    <h1> {{#if username}}
+        Welcome, {{username}}!
+        <p>View <a href="/ideas">all course ideas</a>.</p>
+    {{else}}
+        <form action="/signin" method="post">
+            <input type="text" placeholder="Username" name="username" />
+            <button>Sign In</button>
+        </form>
+    {{/if}}</h1>
 {{/partial}}
 
 {{> base.hbs}}

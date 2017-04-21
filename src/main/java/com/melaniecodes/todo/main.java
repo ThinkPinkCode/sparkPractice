@@ -1,5 +1,6 @@
 package com.melaniecodes.todo;
 
+import com.melaniecodes.todo.model.CourseIdea;
 import com.melaniecodes.todo.model.CourseIdeaDAO;
 import com.melaniecodes.todo.model.SimpleCourseIdeaDAO;
 import spark.ModelAndView;
@@ -15,7 +16,6 @@ import static spark.Spark.staticFileLocation;
 
 public class main
 {
-
 
     public static void main(String[] args) {
 
@@ -42,6 +42,15 @@ public class main
             model.put("ideas", dao.findAll());
             return new ModelAndView(model, "ideas.hbs");
         }, new HandlebarsTemplateEngine());
+
+        post ("/ideas", (req, res) -> {
+            String courseName = req.queryParams("courseName");
+            CourseIdea newCourseIdea = new CourseIdea(courseName, req.cookie("username"));
+            dao.add(newCourseIdea);
+            res.redirect("/ideas");
+            return null;
+        });
+
     }
 
 
