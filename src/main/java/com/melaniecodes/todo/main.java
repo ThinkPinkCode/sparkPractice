@@ -20,8 +20,15 @@ public class main
 
         staticFileLocation("/public");
         CourseIdeaDAO dao = new SimpleCourseIdeaDAO();
-        Spark.before("/ideas", ((request, response) -> {
-            if (request.cookie("username") == null) {
+
+       before((request, response) -> {
+           if (request.cookie("username") != null){
+               request.attribute(("username"), request.cookie("username"));
+           }
+       });
+
+        before("/ideas", ((request, response) -> {
+            if (request.attribute("username") == null) {
                 response.redirect("/");
                 halt();
             }
@@ -29,7 +36,7 @@ public class main
 
         get("/", (req, res) -> {
             Map<String, String> model = new HashMap<>();
-            String username = req.cookie("username");
+            String username = req.attribute("username");
             model.put("username", username);
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
@@ -51,7 +58,7 @@ public class main
 
         post ("/ideas", (req, res) -> {
             String courseName = req.queryParams("courseName");
-            CourseIdea newCourseIdea = new CourseIdea(courseName, req.cookie("username"));
+            CourseIdea newCourseIdea = new CourseIdea(courseName, req.attribute("username"));
             dao.add(newCourseIdea);
             res.redirect("/ideas");
             return null;
