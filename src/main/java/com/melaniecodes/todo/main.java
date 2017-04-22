@@ -5,14 +5,13 @@ import com.melaniecodes.todo.model.CourseIdeaDAO;
 import com.melaniecodes.todo.model.SimpleCourseIdeaDAO;
 import spark.ModelAndView;
 import spark.Request;
+import spark.Spark;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static spark.Spark.get;
-import static spark.Spark.post;
-import static spark.Spark.staticFileLocation;
+import static spark.Spark.*;
 
 public class main
 {
@@ -21,6 +20,12 @@ public class main
 
         staticFileLocation("/public");
         CourseIdeaDAO dao = new SimpleCourseIdeaDAO();
+        Spark.before("/ideas", ((request, response) -> {
+            if (request.cookie("username") == null) {
+                response.redirect("/");
+                halt();
+            }
+        }));
 
         get("/", (req, res) -> {
             Map<String, String> model = new HashMap<>();
