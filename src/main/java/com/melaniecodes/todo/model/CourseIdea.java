@@ -1,20 +1,31 @@
 package com.melaniecodes.todo.model;
 
+import com.github.slugify.Slugify;
+
 public class CourseIdea {
-    public String courseTitle;
-    public String courseCreator;
+    private String slug;
+    private String courseTitle;
+    private String courseCreator;
 
     public CourseIdea(String courseTitle, String courseCreator) {
         this.courseTitle = courseTitle;
         this.courseCreator = courseCreator;
+        Slugify slugify = new Slugify();
+        slug = slugify.slugify(courseTitle);
     }
 
     public String getCourseTitle() {
+
         return courseTitle;
     }
 
     public String getCourseCreator() {
+
         return courseCreator;
+    }
+
+    public String getSlug() {
+        return slug;
     }
 
     @Override
