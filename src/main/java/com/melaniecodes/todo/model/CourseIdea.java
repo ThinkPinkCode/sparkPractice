@@ -25,6 +25,7 @@ public class CourseIdea {
     }
 
     public String getSlug() {
+
         return slug;
     }
 
