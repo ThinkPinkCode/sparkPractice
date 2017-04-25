@@ -11,8 +11,6 @@ public class SimpleCourseIdeaDAO implements CourseIdeaDAO {
         ideas = new ArrayList<>();
     }
 
-
-
     @Override
     public boolean add(CourseIdea idea) {
         return ideas.add(idea);
@@ -21,5 +19,10 @@ public class SimpleCourseIdeaDAO implements CourseIdeaDAO {
     @Override
     public List<CourseIdea> findAll() {
         return new ArrayList<>(ideas);
+    }
+
+    @Override
+    public CourseIdea findBySlug(String slug) {
+        return null;
     }
 }
