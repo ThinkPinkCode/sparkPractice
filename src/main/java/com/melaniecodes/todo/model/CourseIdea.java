@@ -2,12 +2,17 @@ package com.melaniecodes.todo.model;
 
 import com.github.slugify.Slugify;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class CourseIdea {
     private String slug;
     private String courseTitle;
     private String courseCreator;
+    private Set<String> voters;
 
     public CourseIdea(String courseTitle, String courseCreator) {
+        voters = new HashSet<>();
         this.courseTitle = courseTitle;
         this.courseCreator = courseCreator;
         Slugify slugify = new Slugify();
@@ -27,6 +32,14 @@ public class CourseIdea {
     public String getSlug() {
 
         return slug;
+    }
+
+    public boolean addVote(String voterUsername) {
+        return voters.add(voterUsername);
+    }
+
+    public int returnVoteCount() {
+        return voters.size();
     }
 
     @Override
