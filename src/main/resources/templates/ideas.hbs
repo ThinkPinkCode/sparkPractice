@@ -3,9 +3,11 @@
     <h1>List of Ideas</h1>
     <ul>
         {{#each ideas}}
-            <li><form action="/ideas/{{slug}}/vote" method="post">
-                {{courseTitle}}  <button>Vote</button> ({{voteCount}})
-            </form></li>
+            <li>
+                <form action="/ideas/{{slug}}/vote" method="post">
+                    {{courseTitle}} <button>Vote</button> ({{formattedVoteCount}})
+                </form>
+            </li>
         {{/each}}
     </ul>
 

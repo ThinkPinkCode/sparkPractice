@@ -42,6 +42,18 @@ public class CourseIdea {
         return voters.size();
     }
 
+    public String getFormattedVoteCount(){
+        String noun;
+
+        if (voters.size() == 1){
+            noun = "Vote";
+        }
+        else
+            noun = "Votes";
+
+        return getVoteCount()+ " "+ noun;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
