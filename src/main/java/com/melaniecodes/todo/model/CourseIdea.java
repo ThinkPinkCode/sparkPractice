@@ -38,7 +38,7 @@ public class CourseIdea {
         return voters.add(voterUsername);
     }
 
-    public int returnVoteCount() {
+    public int getVoteCount() {
         return voters.size();
     }
 
