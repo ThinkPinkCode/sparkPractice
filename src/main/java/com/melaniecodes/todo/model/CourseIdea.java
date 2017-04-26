@@ -34,7 +34,7 @@ public class CourseIdea {
         return slug;
     }
 
-    public boolean addVote(String voterUsername) {
+    public boolean addVoter(String voterUsername) {
         return voters.add(voterUsername);
     }
 
