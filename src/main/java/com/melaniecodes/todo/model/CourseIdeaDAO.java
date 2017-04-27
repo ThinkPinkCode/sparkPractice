@@ -8,5 +8,7 @@ public interface CourseIdeaDAO {
 
     List<CourseIdea> findAll();
 
+    List<String> listVoters();
+
     CourseIdea findBySlug(String slug);
 }

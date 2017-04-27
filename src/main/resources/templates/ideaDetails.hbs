@@ -1,0 +1,16 @@
+{{#partial "content"}}
+
+    <h1> Course Title: {{courseTitle}} </h1>
+
+    <p>
+    <h2>Voters:</h2>
+    <ul>
+        {{#each voters}}
+            <li> {{this}} </li>
+        {{/each}}
+    </ul>
+    </p>
+
+{{/partial}}
+
+{{> base.hbs}}

@@ -35,10 +35,12 @@ public class CourseIdea {
     }
 
     public boolean addVoter(String voterUsername) {
+
         return voters.add(voterUsername);
     }
 
     public int getVoteCount() {
+
         return voters.size();
     }
 
@@ -52,6 +54,11 @@ public class CourseIdea {
             noun = "Votes";
 
         return getVoteCount()+ " "+ noun;
+    }
+
+    public Set<String> getVoters(){
+        System.out.println(voters.size());
+        return voters;
     }
 
     @Override

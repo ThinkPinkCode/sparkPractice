@@ -21,15 +21,15 @@ public class main
         staticFileLocation("/public");
         CourseIdeaDAO dao = new SimpleCourseIdeaDAO();
 
-       before((request, response) -> {
-           if (request.cookie("username") != null){
-               request.attribute(("username"), request.cookie("username"));
+       before((req, res) -> {
+           if (req.cookie("username") != null){
+               req.attribute(("username"), req.cookie("username"));
            }
        });
 
-        before("/ideas", ((request, response) -> {
-            if (request.attribute("username") == null) {
-                response.redirect("/");
+        before("/ideas", ((req, res) -> {
+            if (req.attribute("username") == null) {
+                res.redirect("/");
                 halt();
             }
         }));
@@ -63,6 +63,16 @@ public class main
             res.redirect("/ideas");
             return null;
         });
+
+        //work on this
+        get ("/ideas/:slug/details", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            CourseIdea myCourseIdea = dao.findBySlug(req.params("slug"));
+            String courseTitle = myCourseIdea.getCourseTitle();
+            model.put("courseTitle", courseTitle);
+            model.put("voters",myCourseIdea.getVoters());
+            return new ModelAndView(model, "ideaDetails.hbs");
+        }, new HandlebarsTemplateEngine());
 
         post("/ideas/:slug/vote", ((req, res) -> {
             CourseIdea myCourseIdea = dao.findBySlug(req.params("slug"));

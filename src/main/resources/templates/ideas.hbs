@@ -7,6 +7,10 @@
                 <form action="/ideas/{{slug}}/vote" method="post">
                     {{courseTitle}} <button>Vote</button> ({{formattedVoteCount}})
                 </form>
+
+                <form action="/ideas/{{slug}}/details" method="get">
+                    <button>View Details </button>
+                </form>
             </li>
         {{/each}}
     </ul>
