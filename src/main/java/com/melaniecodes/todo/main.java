@@ -67,10 +67,8 @@ public class main
         //work on this
         get ("/ideas/:slug/details", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            CourseIdea myCourseIdea = dao.findBySlug(req.params("slug"));
-            String courseTitle = myCourseIdea.getCourseTitle();
-            model.put("courseTitle", courseTitle);
-            model.put("voters",myCourseIdea.getVoters());
+            CourseIdea theCourseIdea = dao.findBySlug(req.params("slug"));
+            model.put("idea", theCourseIdea);
             return new ModelAndView(model, "ideaDetails.hbs");
         }, new HandlebarsTemplateEngine());
 
