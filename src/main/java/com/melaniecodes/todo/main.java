@@ -65,7 +65,7 @@ public class main
         });
 
         //work on this
-        get ("/ideas/:slug/details", (req, res) -> {
+        get ("/ideas/:slug", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             CourseIdea theCourseIdea = dao.findBySlug(req.params("slug"));
             model.put("idea", theCourseIdea);

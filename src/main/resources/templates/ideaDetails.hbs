@@ -1,25 +1,29 @@
-{{#partial "title"}}
-    Course Title: {{idea.courseTitle}}
-{{/partial}}
 
 {{#partial "content"}}
 
 
-    <h2>Voters:</h2>
+    <h2>{{idea.formattedVoteCount}}</h2>
 
-    <p>
+
     <ul>
         {{#each idea.voters}}
-            <li> {{this}} </li>
+            <li> {{ this }} </li>
         {{/each}}
     </ul>
 
-    <form action="/ideas/{{idea.courseTitle}}/vote" method="post">
+    <form action="/ideas/{{ idea.courseTitle }}/vote" method="post">
         <button>Add My Vote!</button>
     </form>
+    <br>
 
-    </p>
+    <a href="/ideas"><button>Back to Ideas</button></a>
 
+
+
+{{/partial}}
+
+{{#partial "title"}}
+    Course Title: {{idea.courseTitle}}
 {{/partial}}
 
 {{> base.hbs}}
