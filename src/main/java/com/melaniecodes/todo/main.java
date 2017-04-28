@@ -2,6 +2,7 @@ package com.melaniecodes.todo;
 
 import com.melaniecodes.todo.model.CourseIdea;
 import com.melaniecodes.todo.model.CourseIdeaDAO;
+import com.melaniecodes.todo.model.NotFoundException;
 import com.melaniecodes.todo.model.SimpleCourseIdeaDAO;
 import spark.ModelAndView;
 import spark.Request;
@@ -21,11 +22,11 @@ public class main
         staticFileLocation("/public");
         CourseIdeaDAO dao = new SimpleCourseIdeaDAO();
 
-       before((req, res) -> {
-           if (req.cookie("username") != null){
-               req.attribute(("username"), req.cookie("username"));
-           }
-       });
+        before((req, res) -> {
+            if (req.cookie("username") != null){
+                req.attribute(("username"), req.cookie("username"));
+            }
+        });
 
         before("/ideas", ((req, res) -> {
             if (req.attribute("username") == null) {
@@ -64,7 +65,6 @@ public class main
             return null;
         });
 
-        //work on this
         get ("/ideas/:slug", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             CourseIdea theCourseIdea = dao.findBySlug(req.params("slug"));
@@ -78,6 +78,13 @@ public class main
             res.redirect("/ideas");
             return null;
         }));
+
+        exception(NotFoundException.class, (exc, req, res) -> {
+            res.status(404);
+            HandlebarsTemplateEngine engine = new HandlebarsTemplateEngine();
+            String html = engine.render(new ModelAndView(null, "not-found.hbs"));
+            res.body(html);
+        });
 
     }
 
