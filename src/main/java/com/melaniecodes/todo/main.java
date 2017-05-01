@@ -56,7 +56,7 @@ public class main
         get ("/ideas", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("ideas", dao.findAll());
-            model.put("flashMessage", FLASH_MESSAGE_KEY);
+            model.put("flashMessage", getFlashMessage(req));
             return new ModelAndView(model, "ideas.hbs");
         }, new HandlebarsTemplateEngine());
 
