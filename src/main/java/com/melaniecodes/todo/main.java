@@ -17,6 +17,8 @@ import static spark.Spark.*;
 public class main
 {
 
+    private static final java.lang.String FLASH_MESSAGE_KEY = "flashMessage";
+
     public static void main(String[] args) {
 
         staticFileLocation("/public");
@@ -74,7 +76,10 @@ public class main
 
         post("/ideas/:slug/vote", ((req, res) -> {
             CourseIdea myCourseIdea = dao.findBySlug(req.params("slug"));
-            myCourseIdea.addVoter(req.attribute("username"));
+            boolean added = myCourseIdea.addVoter(req.attribute("username"));
+            if (added) {
+                setFlashMessage( req, "Thanks for your vote!");
+            }
             res.redirect("/ideas");
             return null;
         }));
@@ -85,7 +90,10 @@ public class main
             String html = engine.render(new ModelAndView(null, "not-found.hbs"));
             res.body(html);
         });
+    }
 
+    private static void setFlashMessage(Request req, String message) {
+        req.session().attribute(FLASH_MESSAGE_KEY, message);
     }
 
 
