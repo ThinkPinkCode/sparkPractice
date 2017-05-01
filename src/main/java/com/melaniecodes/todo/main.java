@@ -96,5 +96,17 @@ public class main
         req.session().attribute(FLASH_MESSAGE_KEY, message);
     }
 
+private static String getFlashMessage(Request req){
 
+    if (req.session(false) == null) {
+        return null;
+    }
+
+    if (req.session().attributes().contains(FLASH_MESSAGE_KEY)) {
+        return null;
+    }
+
+    else
+        return req.session().attribute(FLASH_MESSAGE_KEY);
+}
 }
