@@ -1,5 +1,6 @@
-{{#block "header"}}
-    <!doctype html>
+<div class="page">
+    {{#block "header"}}
+        <!doctype html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -8,18 +9,19 @@
 
     </head>
     <body>
-{{/block}}
+    {{/block}}
 
-<div class="page">
+
     {{#if flashMessage}}
-        <p id="flashMessage"> {{flashMessage}} </p>
+    <p id="flashMessage"> {{flashMessage}} </p>
     {{/if}}
-</div>
 
-{{#block "content"}}
-{{/block}}
 
-{{#block "footer"}}
+    {{#block "content"}}
+    {{/block}}
+
+    {{#block "footer"}}
     </body>
     </html>
-{{/block}}
+    {{/block}}
+</div>
