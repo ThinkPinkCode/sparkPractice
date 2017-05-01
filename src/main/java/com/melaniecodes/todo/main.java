@@ -17,7 +17,7 @@ import static spark.Spark.*;
 public class main
 {
 
-    private static final java.lang.String FLASH_MESSAGE_KEY = "flashMessage";
+    private static final String FLASH_MESSAGE_KEY = "flashMessage";
 
     public static void main(String[] args) {
 
@@ -103,11 +103,10 @@ private static String getFlashMessage(Request req){
         return null;
     }
 
-    if (req.session().attributes().contains(FLASH_MESSAGE_KEY)) {
+    if (!req.session().attributes().contains(FLASH_MESSAGE_KEY)) {
         return null;
     }
 
-    else
-        return req.session().attribute(FLASH_MESSAGE_KEY);
+    return (String)req.session().attribute(FLASH_MESSAGE_KEY);
 }
 }
