@@ -56,7 +56,7 @@ public class main
         get ("/ideas", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("ideas", dao.findAll());
-            model.put("flashMessage", getFlashMessage(req));
+            model.put("flashMessage", captureFlashMessage(req));
             return new ModelAndView(model, "ideas.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -97,16 +97,27 @@ public class main
         req.session().attribute(FLASH_MESSAGE_KEY, message);
     }
 
-private static String getFlashMessage(Request req){
+    private static String getFlashMessage(Request req){
 
-    if (req.session(false) == null) {
-        return null;
+        if (req.session(false) == null) {
+            return null;
+        }
+
+        if (!req.session().attributes().contains(FLASH_MESSAGE_KEY)) {
+            return null;
+        }
+
+        return (String)req.session().attribute(FLASH_MESSAGE_KEY);
     }
 
-    if (!req.session().attributes().contains(FLASH_MESSAGE_KEY)) {
-        return null;
-    }
+    private static String captureFlashMessage(Request req) {
+        String message = getFlashMessage(req);
 
-    return (String)req.session().attribute(FLASH_MESSAGE_KEY);
+        if ( message != null){
+            req.session().removeAttribute(FLASH_MESSAGE_KEY);
+        }
+
+        return message;
+    }
 }
-}
+
